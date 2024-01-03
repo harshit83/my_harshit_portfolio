@@ -1,27 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+  background-color: #000000;
+  overflow-x: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.canvas-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+/* .home{
+  background: radial-gradient(53.21% 53.21% at 50.00% 53.21%, rgba(0, 209, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 100%), #02000D;
+} */
+/* .bg{
+  background-image: url('Images/background.webp');
+  background-size: cover;
+} */
+/* .btn{
+  background:linear-gradient(90deg, transparent, #000b14)
+} */
+
+.canvas-background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; 
+}
+
+.btngradient{
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  overflow: hidden;
+  background:linear-gradient(90deg,#00203c,#000000);
+  transition: 0.2s;
+  box-shadow:  0 0 10px #2196f3, 0 0 100px #2196f3, 0 0 100px #2196f3;
+}
+
+.btngradient:hover, .btngradient:active{
+  color: #255784;
+  background-color: #2196f3;
+  color: white;
+  transition-delay: 1s;
+}
+.btngradient span{
+  position: absolute;
+  display: block;
+  animation-duration: 2s; /* Adjust the duration based on your preference */
+  animation-iteration-count: infinite;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translate(0, 0);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@keyframes slideOut {
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+
+.btngradient span:nth-child(1){
+  top: 0;
+  left: -100%;
+  width: 100%;  
+  height: 3px;
+  background:linear-gradient(90deg, transparent, #ffffff);
+  animation-name: slideIn;
+}
+.btngradient:hover span:nth-child(1){
+  left: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+  animation-name: slideIn;
+}
+
+.btngradient span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width:3px;  
+  height: 100%;
+  background:linear-gradient(180deg, transparent, #ffffff);
+  animation-name: slideIn;
+}
+.btngradient:hover span:nth-child(2){
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+  animation-name: slideIn;
+}
+
+.btngradient span:nth-child(3){
+  bottom: 0;
+  right: -100%;
+  width: 100%;  
+  height: 3px;
+  background:linear-gradient(270deg, transparent, #ffffff);
+  animation-name: slideIn;
+}
+.btngradient:hover span:nth-child(3){
+  right: 100%;
+  transition-delay: 1.25s;
+  transition: 1s;
+  animation-name: slideIn;
+}
+
+.btngradient span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 3px;  
+  height: 100%;
+  background:linear-gradient(360deg, transparent, #ffffff);
+  animation-name: slideIn;
+}
+.btngradient:hover span:nth-child(4){
+  bottom: 100%;
+  transition-delay: 1s;
+  transition: 1s;
+  animation-name: slideIn;
+}
+
+
+
+.home {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navlist:hover {
+  text-decoration-skip-ink: none;
+}
+
+.content {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.profession {
+  background: linear-gradient(180deg, rgb(0, 197, 252) 0%, rgb(255, 255, 255) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Raleway;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.profession1{
+  background: linear-gradient(180deg, #FFF 0%, #00D1FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Raleway;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+}
+
+.button {
+  border: 2px solid rgb(0, 213, 255);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transition: transform 0.3s;
+}
+
+.hamburger.open .line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width:768px) {
+  .svglb{
+    width: 390px;
+    height: 390px;
+  }
+  .profession{
+    font-size: 40px;
+  }
+  .profession1{
+    font-size: 40px;
+  }
+  .hamburger{
+    display: block;
+  }
+  
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-professions {
+  animation: fade-in 1s ease-out;
+}
+
+
+
+/* About Us */
+.gauravimg {
+  position: relative;
+  display: inline-block;
+  width: 52vh;
+  height: 73vh;
+  overflow: hidden;
+}
+
+
+.gauravimg::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: repeating-conic-gradient(from -90deg, rgb(44, 0, 114) 0%, rgb(44, 0, 114) 5%, transparent 5%, transparent 30%, rgb(44, 0, 114) 50%);
+  animation: spiral 8s linear infinite;
+}
+
+@keyframes spiral {
+  100% {
+    transform: translate(-50%, -50%) rotate(720deg);
+  }
+}
+
+.gauravimg::after {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: repeating-conic-gradient(from 0deg, #2781ff 0%, #2781ff  5%, transparent 5%, transparent 30%, #2781ff  50%);
+  animation: spiral 8s linear infinite;
+}
+
+
+.right-container, .left-container{
+  background:linear-gradient(90deg, #0051ff, #11002b);
+  box-shadow: 1px 1px 10px cyan;
 }
