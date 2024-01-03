@@ -11,6 +11,36 @@ body{
   overflow-x: hidden;
 }
 
+/* Scroll bar */
+/* For webkit-based browsers (Chrome, Safari) */
+/* Width, height, and color of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(black,navy);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.scrollable-content {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+
 .canvas-background {
   position: absolute;
   top: 0;
