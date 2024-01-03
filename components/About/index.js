@@ -30,7 +30,7 @@ export default function About() {
         </div>
         
         <div className='gauravimg'>
-          <img src="./Images/gauravimg.jpg" className='gmimg top-[1.5vh] left-[1.5vh] absolute h-[70vh] md:h-[70vh] z-50' alt="gauravimg" />
+          <img src="./Images/gauravimg.jpg" className='gmimg top-[1.5vh] left-[1.5vh] absolute h-[70vh] md:h-[70vh] z-30' alt="gauravimg" />
         </div>
 
         <CanvasBackground className="absolute -z-20 top-50"/>

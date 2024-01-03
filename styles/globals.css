@@ -19,16 +19,7 @@ body{
   height: 100%;
   z-index: -1;
 }
-/* .home{
-  background: radial-gradient(53.21% 53.21% at 50.00% 53.21%, rgba(0, 209, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 100%), #02000D;
-} */
-/* .bg{
-  background-image: url('Images/background.webp');
-  background-size: cover;
-} */
-/* .btn{
-  background:linear-gradient(90deg, transparent, #000b14)
-} */
+
 
 .canvas-background{
   position: fixed;
@@ -216,7 +207,15 @@ body{
   transform: translateY(-7px) rotate(-45deg);
 }
 
+
+.navlinks-mobile{
+  background: linear-gradient(black,rgb(0, 0, 61));
+}
+
 @media (max-width:768px) {
+  .navlinks,.navbtn{
+    display: none;
+  }
   .svglb{
     width: 390px;
     height: 390px;
