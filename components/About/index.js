@@ -29,8 +29,9 @@ export default function About() {
 
         </div>
         
-        <div className='gauravimg'>
-          <img src="./Images/gauravimg.jpg" className='gmimg top-[1.5vh] left-[1.5vh] absolute h-[70vh] md:h-[70vh] z-30' alt="gauravimg" />
+        <div className='gauravimg relative p-[1vh] w-[80vw] h-[52vh] md:w-[50vh] md:h-[60vh] flex flex-row justify-center items-center'>
+          <img src="./Images/gauravimg.jpg" className='absolute z-[50] w-[95%] h-[50vh] mx-auto md:w-[48vh] md:h-[58vh] object-cover'  alt="gauravimg" />
+          
         </div>
 
         <CanvasBackground className="absolute -z-20 top-50"/>

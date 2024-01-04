@@ -1,19 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Marcellus&family=Montserrat&family=Poppins&family=Raleway&family=Roboto&family=RocknRoll+One&family=Source+Code+Pro&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body{
-  background-color: #000000;
+body {
+  background-color: #000000 ;
   overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 /* Scroll bar */
-/* For webkit-based browsers (Chrome, Safari) */
-/* Width, height, and color of the scrollbar */
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -26,7 +25,7 @@ body{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(black,navy);
+  background: linear-gradient(black, navy);
   border-radius: 5px;
 }
 
@@ -40,7 +39,6 @@ body{
   scrollbar-color: #888 #f1f1f1;
 }
 
-
 .canvas-background {
   position: absolute;
   top: 0;
@@ -50,31 +48,33 @@ body{
   z-index: -1;
 }
 
-
-.canvas-background{
+.canvas-background {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1; 
+  z-index: -1;
 }
 
-.btngradient{
+.btngradient {
   position: relative;
   display: inline-block;
   letter-spacing: 1px;
   overflow: hidden;
-  background:linear-gradient(90deg,#00203c,#000000);
+  background: linear-gradient(90deg, #00203c, #000000);
   transition: 0.2s;
-  box-shadow:  0 0 10px #2196f3, 0 0 100px #2196f3, 0 0 100px #2196f3;
+  border: 1px groove rgb(128, 128, 128);
+  /* box-shadow:  0 0 10px #2196f3, 0 0 100px #2196f3, 0 0 100px #2196f3; */
 }
 
-.btngradient:hover, .btngradient:active{
+.btngradient:hover,
+.btngradient:active {
   color: #255784;
   background-color: #2196f3;
   color: white;
   transition-delay: 1s;
+  border: none;
 }
-.btngradient span{
+.btngradient span {
   position: absolute;
   display: block;
   animation-duration: 2s; /* Adjust the duration based on your preference */
@@ -93,68 +93,65 @@ body{
   }
 }
 
-
-.btngradient span:nth-child(1){
+.btngradient span:nth-child(1) {
   top: 0;
   left: -100%;
-  width: 100%;  
+  width: 100%;
   height: 3px;
-  background:linear-gradient(90deg, transparent, #ffffff);
+  background: linear-gradient(90deg, transparent, #ffffff);
   animation-name: slideIn;
 }
-.btngradient:hover span:nth-child(1){
+.btngradient:hover span:nth-child(1) {
   left: 100%;
   transition: 1s;
   transition-delay: 0.25s;
   animation-name: slideIn;
 }
 
-.btngradient span:nth-child(2){
+.btngradient span:nth-child(2) {
   top: -100%;
   right: 0;
-  width:3px;  
+  width: 3px;
   height: 100%;
-  background:linear-gradient(180deg, transparent, #ffffff);
+  background: linear-gradient(180deg, transparent, #ffffff);
   animation-name: slideIn;
 }
-.btngradient:hover span:nth-child(2){
+.btngradient:hover span:nth-child(2) {
   top: 100%;
   transition: 1s;
   transition-delay: 0.5s;
   animation-name: slideIn;
 }
 
-.btngradient span:nth-child(3){
+.btngradient span:nth-child(3) {
   bottom: 0;
   right: -100%;
-  width: 100%;  
+  width: 100%;
   height: 3px;
-  background:linear-gradient(270deg, transparent, #ffffff);
+  background: linear-gradient(270deg, transparent, #ffffff);
   animation-name: slideIn;
 }
-.btngradient:hover span:nth-child(3){
+.btngradient:hover span:nth-child(3) {
   right: 100%;
   transition-delay: 1.25s;
   transition: 1s;
   animation-name: slideIn;
 }
 
-.btngradient span:nth-child(4){
+.btngradient span:nth-child(4) {
   bottom: -100%;
   left: 0;
-  width: 3px;  
+  width: 3px;
   height: 100%;
-  background:linear-gradient(360deg, transparent, #ffffff);
+  background: linear-gradient(360deg, transparent, #ffffff);
   animation-name: slideIn;
 }
-.btngradient:hover span:nth-child(4){
+.btngradient:hover span:nth-child(4) {
   bottom: 100%;
   transition-delay: 1s;
   transition: 1s;
   animation-name: slideIn;
 }
-
-
 
 .home {
   width: 100vw;
@@ -179,7 +176,11 @@ body{
 }
 
 .profession {
-  background: linear-gradient(180deg, rgb(0, 197, 252) 0%, rgb(255, 255, 255) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(0, 197, 252) 0%,
+    rgb(255, 255, 255) 100%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -190,8 +191,8 @@ body{
   line-height: normal;
 }
 
-.profession1{
-  background: linear-gradient(180deg, #FFF 0%, #00D1FF 100%);
+.profession1 {
+  background: linear-gradient(180deg, #fff 0%, #00d1ff 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -237,29 +238,28 @@ body{
   transform: translateY(-7px) rotate(-45deg);
 }
 
-
-.navlinks-mobile{
-  background: linear-gradient(black,rgb(0, 0, 61));
+.navlinks-mobile {
+  background: linear-gradient(black, rgb(0, 0, 61));
 }
 
-@media (max-width:768px) {
-  .navlinks,.navbtn{
+@media (max-width: 768px) {
+  .navlinks,
+  .navbtn {
     display: none;
   }
-  .svglb{
+  .svglb {
     width: 390px;
     height: 390px;
   }
-  .profession{
+  .profession {
     font-size: 40px;
   }
-  .profession1{
+  .profession1 {
     font-size: 40px;
   }
-  .hamburger{
+  .hamburger {
     display: block;
   }
-  
 }
 
 @keyframes fade-in {
@@ -275,28 +275,31 @@ body{
   animation: fade-in 1s ease-out;
 }
 
-
-
 /* About Us */
 .gauravimg {
   position: relative;
   display: inline-block;
-  width: 52vh;
-  height: 73vh;
   overflow: hidden;
 }
 
-
 .gauravimg::before {
-  content: '';
+  content: "";
   position: absolute;
+  z-index: 500px;
   width: 200%;
   height: 200%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: repeating-conic-gradient(from -90deg, rgb(44, 0, 114) 0%, rgb(44, 0, 114) 5%, transparent 5%, transparent 30%, rgb(44, 0, 114) 50%);
+  background: repeating-conic-gradient(
+    from -90deg,
+    rgb(44, 0, 114) 0%,
+    rgb(44, 0, 114) 5%,
+    transparent 5%,
+    transparent 30%,
+    rgb(44, 0, 114) 50%
+  );
   animation: spiral 8s linear infinite;
 }
 
@@ -307,20 +310,28 @@ body{
 }
 
 .gauravimg::after {
-  content: '';
+  content: "";
   position: absolute;
+  z-index: 500px;
   width: 200%;
   height: 200%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: repeating-conic-gradient(from 0deg, #2781ff 0%, #2781ff  5%, transparent 5%, transparent 30%, #2781ff  50%);
+  background: repeating-conic-gradient(
+    from 0deg,
+    #2781ff 0%,
+    #2781ff 5%,
+    transparent 5%,
+    transparent 30%,
+    #2781ff 50%
+  );
   animation: spiral 8s linear infinite;
 }
 
-
-.right-container, .left-container{
-  background:linear-gradient(90deg, #0051ff, #11002b);
+.right-container,
+.left-container {
+  background: linear-gradient(90deg, #0051ff, #11002b);
   box-shadow: 1px 1px 10px cyan;
 }

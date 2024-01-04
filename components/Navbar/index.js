@@ -24,12 +24,12 @@ export default function Navbar() {
     <>
       {loading && (
         <div>
-          <div className="navbar relative z-50 w-[95%] mx-auto flex justify-between p-7 md:p-10 items-center">
+          <div className="navbar relative z-50 w-[95%] mx-auto flex justify-between items-center my-[5vh]">
             <div>
               <img
                 src="./Images/gauravlogo.png"
                 alt="gauravlogo"
-                className="w-28 md:w-32 lg:w-48"
+                className="h-[7vh] md:h-[10.5vh]"
               />
             </div>
 
@@ -41,7 +41,7 @@ export default function Navbar() {
                 duration={500}
                 onClick={scrollToTop}
               >
-                <li className="navlist text-white text-[3vh] font-normal hover:text-cyan-500  cursor-pointer">
+                <li className="navlist text-white text-[3.5vh] font-normal hover:text-cyan-500  cursor-pointer">
                   Home
                 </li>
               </Link>
@@ -53,7 +53,7 @@ export default function Navbar() {
                 duration={500}
                 onClick={scrollToTop}
               >
-                <li className="navlist text-white text-[3vh] font-normal hover:text-cyan-500  cursor-pointer">
+                <li className="navlist text-white text-[3.5vh] font-normal hover:text-cyan-500  cursor-pointer">
                   About Me
                 </li>
               </Link>
@@ -65,7 +65,7 @@ export default function Navbar() {
                 duration={500}
                 onClick={scrollToTop}
               >
-                <li className="navlist text-white text-[3vh] font-normal hover:text-cyan-500  cursor-pointer">
+                <li className="navlist text-white text-[3.5vh] font-normal hover:text-cyan-500  cursor-pointer">
                   Experience
                 </li>
               </Link>
@@ -77,7 +77,7 @@ export default function Navbar() {
                 duration={500}
                 onClick={scrollToTop}
               >
-                <li className="navlist text-white text-[3vh] font-normal hover:text-cyan-500  cursor-pointer">
+                <li className="navlist text-white text-[3.5vh] font-normal hover:text-cyan-500  cursor-pointer">
                   Projects
                 </li>
               </Link>
@@ -93,7 +93,7 @@ export default function Navbar() {
               </Link>
             </button>
 
-            <div className="p-[1vh] md:hidden" onClick={toggleMobileNav}>
+            <div className="p-[1vh] md:hidden absolute right-0" onClick={toggleMobileNav}>
               <FontAwesomeIcon
                 className="text-[3.5vh] text-white"
                 icon="fa-solid fa-bars"
