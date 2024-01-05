@@ -8,8 +8,8 @@ export default function Home() {
       <HomeSection/>
       <About />
       <Experience />
-      <Projects />
       <TechStack />
+      <Projects />
       <Contact />
     </>
   );

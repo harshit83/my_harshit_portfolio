@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Marcellus&family=Montserrat&family=Poppins&family=Raleway&family=Roboto&family=RocknRoll+One&family=Source+Code+Pro&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,7 +7,7 @@
 body {
   background-color: #070012 ;
   overflow-x: hidden;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 600;
 }
 
@@ -53,6 +53,9 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+}
+.techgradient{
+  background: linear-gradient(45deg, #00203c, #000000);
 }
 
 .btngradient {
@@ -184,10 +187,10 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: Raleway;
+  font-family: 'Poppins', sans-serif;
   font-size: 80px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
 }
 
@@ -196,10 +199,10 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: Raleway;
+  font-family: 'Poppins', sans-serif;
   font-size: 80px;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 500;
   line-height: normal;
 }
 
@@ -398,3 +401,5 @@ body {
     visibility: visible;
   }
 }
+
+
