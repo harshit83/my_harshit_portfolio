@@ -39,7 +39,7 @@ export default function HomeSection() {
   return (
     <div id="home" className="home">
 
-      <div className="svglb absolute">
+      <div className="svglb absolute ">
         <Lottie animationData={spaceship} />
       </div>
       <div className="content">

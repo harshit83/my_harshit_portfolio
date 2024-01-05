@@ -7,4 +7,4 @@ export { default as Projects } from "./Projects";
 export { default as TechStack } from "./TechStack";
 export { default as About } from "./About";
 export { default as Layout } from "./Layout";
-export {default as HomeSection} from "./HomeSection";
+export { default as HomeSection } from "./HomeSection";

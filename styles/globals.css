@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #000000 ;
+  background-color: #070012 ;
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -334,4 +334,67 @@ body {
 .left-container {
   background: linear-gradient(90deg, #0051ff, #11002b);
   box-shadow: 1px 1px 10px cyan;
+}
+
+
+
+/* Project */
+.project-card-wrapper {
+  position: relative;
+}
+
+.project-card {
+  perspective: 1000px;
+  transition: transform 0.5s;
+  border-radius: 10px; 
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.project-card:hover .project-link {
+  opacity: 1;
+  visibility: visible;
+}
+
+.project-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-link a {
+  display: block; /* Ensure the link takes up the full space */
+}
+
+.project-link:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.project-card:hover .project-link a {
+  transform: translateZ(50px); /* Adjust the scale factor as needed */
+}
+
+@media (max-width: 768px) {
+  
+  .project-card,.project-link {
+    background: #00000061;
+    opacity: 1;
+    visibility: visible;
+  }
 }

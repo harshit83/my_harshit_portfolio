@@ -15,16 +15,17 @@ export default function Layout({ children }) {
   useEffect(()=>{
     const timer = setTimeout(()=>{
         setLoading(false);
-    },3000)
+    },4100)
     return ()=>clearTimeout(timer);
   },[])
 
   return (
     <>
       {isloading ? (
-        <div className="flex flex-row justify-center items-center h-[100vh]">
-            <CanvasBackground className="canvas-background"/>
-            <Lottie animationData={loader} className="w-[60vh]"/>
+        <div className="flex flex-col justify-center items-center h-[100vh]">
+          <CanvasBackground className="canvas-background"/>
+          <Lottie animationData={loader} className="w-[30vh]"/>
+          <h2 className="text-[3.5vh] font-medium text-white">Loading...</h2>
         </div>
       ) : (
         <div>

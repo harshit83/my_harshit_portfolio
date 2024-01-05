@@ -122,7 +122,7 @@ export default function Contact() {
                 />
               </div>
 
-              <div className="mt-[4vh] bg-black flex flex-row text-white text-[2.5vh] font-semibold">
+              <div className="mt-[4vh] flex flex-row text-white text-[2.2vh] font-semibold">
                 <button
                   type="submit"
                   className={`btngradient p-[1.5vh] ${
