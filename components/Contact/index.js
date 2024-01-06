@@ -136,7 +136,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <Lottie animationData={loading} className="w-[40vh]"/>
     </div>
   );
 }
