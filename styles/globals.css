@@ -58,6 +58,10 @@ body {
   background: linear-gradient(45deg, #00203c, #000000);
 }
 
+.tesgradient {
+  background: linear-gradient(180deg, #003050, #0c0020);
+}
+
 .btngradient {
   position: relative;
   display: inline-block;
@@ -406,4 +410,8 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.tespic{
+  border: 4px solid rgb(100, 185, 255);
 }
