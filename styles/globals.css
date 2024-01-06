@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  background-color: #070012 ;
+  background-color: #070012;
   overflow-x: hidden;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 600;
 }
 
@@ -54,7 +54,7 @@ body {
   left: 0;
   z-index: -1;
 }
-.techgradient{
+.techgradient {
   background: linear-gradient(45deg, #00203c, #000000);
 }
 
@@ -187,7 +187,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 80px;
   font-style: normal;
   font-weight: 500;
@@ -199,7 +199,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 80px;
   font-style: normal;
   font-weight: 500;
@@ -339,8 +339,6 @@ body {
   box-shadow: 1px 1px 10px cyan;
 }
 
-
-
 /* Project */
 .project-card-wrapper {
   position: relative;
@@ -349,7 +347,7 @@ body {
 .project-card {
   perspective: 1000px;
   transition: transform 0.5s;
-  border-radius: 10px; 
+  border-radius: 10px;
   overflow: hidden;
   transform-style: preserve-3d;
 }
@@ -380,7 +378,7 @@ body {
 }
 
 .project-link:hover::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -394,12 +392,18 @@ body {
 }
 
 @media (max-width: 768px) {
-  
-  .project-card,.project-link {
+  .project-card,
+  .project-link {
     background: #00000061;
     opacity: 1;
     visibility: visible;
   }
 }
 
-
+/* experience */
+.gradienttxt {
+  background: linear-gradient(111deg, #ffffff 7.81%, #006eff 77.43%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
