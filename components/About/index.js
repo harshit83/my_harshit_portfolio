@@ -17,7 +17,7 @@ export default function About() {
         Full Stack Developer
       </h2>
 
-      <div className="flex flex-col-reverse md:flex-row md:w-[85%] mx-auto justify-between">
+      <div className="flex flex-col-reverse md:flex-row md:w-[95%] mx-auto justify-between">
         <div className="w-[90%] md:w-[60%] mx-auto md:mx-0">
           <div className="flex flex-row justify-start items-center">
             <h1 className="text-[2.8vh] md:text-[4vh] mr-[2vh] font-semibold">

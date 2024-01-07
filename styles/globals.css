@@ -415,3 +415,13 @@ body {
 .tespic{
   border: 4px solid rgb(100, 185, 255);
 }
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none; /* Remove the default shadow background */
+  opacity: 0; /* Hide the shadows by setting their opacity to 0 */
+}
+
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: none;
+}
