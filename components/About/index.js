@@ -9,8 +9,8 @@ export default function About() {
   };
 
   return (
-    <div id="about" className="w-[90%] mx-auto text-white pt-[8vh]">
-      <h1 className="text-center text-[5vh] font-semibold mb-[2vh]">
+    <div id="about" className="w-[90%] select-none mx-auto text-white pt-[8vh]">
+      <h1 className="text-center  text-[5vh] font-semibold mb-[2vh]">
         About Me
       </h1>
       <h2 className="mb-[5vh] text-[2.4vh] mx-auto md:text-[3vh] w-fit px-[2vh] text-cyan-900 bg-cyan-300">
@@ -30,7 +30,7 @@ export default function About() {
             />
           </div>
 
-          <p className="text-[2.5vh] md:text-[3vh] font-normal text-justify text-gray-200 my-[1vh]">
+          <p className="text-[2.5vh]  md:text-[3vh] font-normal text-justify text-gray-200 my-[1vh]">
           I'm Gaurav Madan, a dedicated Full Stack Developer and UI/UX enthusiast. With a keen eye for detail and a passion for innovation, I excel in Frontend App Development, Web Development, and crafting captivating user interfaces. As a third-year undergrad specializing in CS&E (Cyber Security), my aim is to create secure and intuitive digital experiences that prioritize functionality and user satisfaction. I thrive on coding magic, constantly weaving creativity into my work to deliver awe-inspiring solutions..{" "}
           </p>
 

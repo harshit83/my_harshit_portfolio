@@ -63,7 +63,7 @@ export default function Contact() {
   };
 
   return (
-    <div id="contact" className="w-[90%] mx-auto  text-white text-center">
+    <div id="contact" className="w-[90%] select-none mx-auto  text-white text-center">
       <h1 className="mb-[5vh] text-[5vh]">Contact</h1>
       <div className="flex flex-col md:flex-row items-center justify-center">
         <div className="flex flex-row items-center">
@@ -78,6 +78,7 @@ export default function Contact() {
               onSubmit={handleSubmit}
               className="flex flex-col justify-start"
             >
+              <h2 className="text-left text-[2.8vh] md:text-[3.3vh] font-normal text-neutral-200">You can drop a message for any tech related queries, I will reach out you soon</h2>
               <div className="mt-[6vh] border-2 border-black">
                 <input
                   type="text"
