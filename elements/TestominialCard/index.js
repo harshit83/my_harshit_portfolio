@@ -23,7 +23,7 @@ const TestimonialCard = ({
         <p className="text-[2vh] select-none md:text-[2.5vh] text-white font-medium text-center mb-[4vh]">
           "{testimonialdesc}".
         </p>
-        <div className="absolute left-[32%] -bottom-[40%] md:left-[35%] md:-bottom-[40%]">
+        <div className="absolute left-[32%] -bottom-[50%] md:left-[30%] lg:left-[35%] md:-bottom-[40%]">
           <div className="flex flex-row justify-center items-center">
             <img
               src={testimonialimg}

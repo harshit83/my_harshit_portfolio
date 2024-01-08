@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useRef, useEffect} from "react";
 import TestimonialCard from "../../elements/TestominialCard";
 import SwiperCore, { Navigation, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,6 +10,26 @@ SwiperCore.use([Navigation, Pagination, Autoplay]);
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 export default function Testimonials() {
+  const swiperRef = useRef(null);
+  const totalSlides = 6; // The total number of slides
+  const slideInterval = 1500; // 1.5 seconds in milliseconds
+  const currentSlideRef = useRef(0); // Use useRef to store the current slide
+
+  useEffect(() => {
+    const swiperInstance = swiperRef.current;
+
+    const autoplay = setInterval(() => {
+      currentSlideRef.current = (currentSlideRef.current + 1) % totalSlides;
+      if (swiperInstance && swiperInstance.slideTo) {
+        swiperInstance.slideTo(currentSlideRef.current);
+      }
+    }, slideInterval);
+
+    return () => {
+      clearInterval(autoplay);
+    };
+  }, []);
+
   const testidata = [
     {
       testiImg: "/Images/reenanew.jpg",
@@ -61,15 +81,18 @@ export default function Testimonials() {
         Testimonials
       </h1>
 
-      <div className="w-[100%] mx-auto p-[5vh]">
+      <div className="w-[100%] mx-auto py-[5vh] md:p-[5vh]">
       <Swiper
-        slidesPerView={1} // For mobile, 1 card visible
+        slidesPerView={1}
+        onSwiper={(swiper) => {
+          swiperRef.current = swiper;
+        }} // For mobile, 1 card visible
         spaceBetween={10}
         loop={true}
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
-        autoplay={true}
+        // autoplay={true}
         coverflowEffect={{
           rotate:50,
           stretch:0,

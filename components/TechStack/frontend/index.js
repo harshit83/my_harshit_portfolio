@@ -12,7 +12,7 @@ export default function Frontend() {
     {frontendImg:"/Images/icons/nextjs.jpg"},
   ]
   return (
-    <div className="w-[90%] md:w-[50%] mx-auto">
+    <div className="w-[90%] md:w-[70%] lg:w-[50%] mx-auto">
       <h2 className="text-white text-center text-[3.4vh] my-[3vh]">Frontend</h2>
       <div className="flex flex-row flex-wrap justify-center items-center gap-[2vh]">
 

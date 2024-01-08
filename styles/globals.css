@@ -425,3 +425,7 @@ body {
 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
   display: none;
 }
+
+.tesgradient2{
+  background: linear-gradient(pink,white);
+}
