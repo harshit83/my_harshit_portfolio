@@ -5,27 +5,27 @@ import { ProjectCard } from "../../elements";
 export default function Projects() {
   const projects = [
     {
-      projectimage: "/Images/webbunchup.png",
+      projectimage: "/Images/webbunchup.webp",
       projectdemolink: "https://bunchup.in",
       projectgithublink: "",
     },
     {
-      projectimage: "/Images/maliweb.png",
+      projectimage: "/Images/maliweb.webp",
       projectdemolink: "https://samarthkrupafarm.in",
       projectgithublink: "",
     },
     {
-      projectimage: "/Images/webbang.png",
+      projectimage: "/Images/webbang.webp",
       projectdemolink: "https://thebangoutfit.com",
       projectgithublink: "",
     },
     {
-      projectimage: "/Images/webpelikas.png",
+      projectimage: "/Images/webpelikas.webp",
       projectdemolink: "https://pelikashealthcare.com",
       projectgithublink: "",
     },
     {
-      projectimage: "/Images/webgrocery.png",
+      projectimage: "/Images/webgrocery.webp",
       projectdemolink: "",
       projectgithublink:
         "https://github.com/gauravmad/Grocery-management-System",
@@ -39,7 +39,7 @@ export default function Projects() {
 
   return (
     <div id="projects" className="text-2xl text-white text-center py-[6vh]">
-      <h1 className="text-center text-[3vh] md:text-[5vh] font-semibold mb-[5vh]">
+      <h1 className="text-center text-[3vh] md:text-[5vh] font-semibold my-[10vh]">
         My Recent Work/Projects
       </h1>
 

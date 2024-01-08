@@ -59,14 +59,14 @@ export default function Navbar() {
               </Link>
 
               <Link
-                to="experience"
+                to="services"
                 spy={true}
                 smooth={true}
                 duration={500}
                 onClick={scrollToTop}
               >
                 <li className="navlist text-white text-[3.5vh] font-normal hover:text-cyan-500  cursor-pointer">
-                  Experience
+                  Services
                 </li>
               </Link>
 

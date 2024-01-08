@@ -1,5 +1,5 @@
 import React from 'react'
-import { HomeSection, Experience, Projects, TechStack, Contact, About, Testimonials } from "../components";
+import { HomeSection, Projects, TechStack, Contact, About, Testimonials, Services } from "../components";
 
 export default function Home() {
   
@@ -7,8 +7,8 @@ export default function Home() {
     <>
       <HomeSection/>
       <About />
-      <Experience />
       <TechStack />
+      <Services/>
       <Projects />
       <Testimonials/>
       <Contact />

@@ -10,7 +10,7 @@ export default function TechStack() {
   };
   return (
     <div className="mb-[7vh]">
-      <h2 className="text-white text-[3vh] md:text-[5vh] font-semibold text-center my-[5vh]">Tech Stack</h2>
+      <h2 className="text-white text-[3vh] md:text-[5vh] font-semibold text-center my-[10vh]">Tech Stack</h2>
       <div className="techgradient border border-gray-700 rounded-xl flex flex-row justify-center items-center w-fit mx-auto">
         <div
           onClick={() => handleTabChange("frontend")}

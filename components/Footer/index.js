@@ -10,7 +10,7 @@ export default function Footer() {
 
         <a href="https://www.instagram.com/gauravmadan2004/" target="_blank">
           <img
-            src="/instagram.png"
+            src="/instagram.webp"
             className="w-[7vh] md:w-[10vh] hover:scale-125 transition-all"
             alt=""
           />
@@ -18,7 +18,7 @@ export default function Footer() {
 
         <a href="https://www.linkedin.com/in/gauravdev04/" target="_blank">
           <img
-            src="/linkedin.png"
+            src="/linkedin.webp"
             className="w-[7vh] md:w-[10vh] hover:scale-125 transition-all"
             alt=""
           />
@@ -26,7 +26,7 @@ export default function Footer() {
 
         <a href="https://wa.me/919689675896" target="_blank">
           <img
-            src="/whatsapp.png"
+            src="/whatsapp.webp"
             className="w-[7vh] md:w-[10vh] hover:scale-125 transition-all"
             alt=""
           />
@@ -34,7 +34,7 @@ export default function Footer() {
 
         <a href="mailto:gauravmadan2004@gmail.com">
           <img
-            src="/gmail.png"
+            src="/gmail.webp"
             className="w-[7vh] md:w-[10vh] hover:scale-125 transition-all"
             alt=""
           />
@@ -42,7 +42,7 @@ export default function Footer() {
 
         <a href="https://github.com/gauravmad">
           <img
-            src="/github.png"
+            src="/github.webp"
             className="w-[7vh] md:w-[10vh] hover:scale-125 transition-all"
             alt=""
           />

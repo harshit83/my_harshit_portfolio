@@ -12,7 +12,7 @@ export default function Others() {
   ];
   return (
     <div className="w-[90%] md:w-[70%] lg:w-[50%] mx-auto">
-      <h2 className="text-white text-center text-[3.4vh] my-[3vh]">Canva</h2>
+      <h2 className="text-white text-center text-[3.4vh] my-[5vh]">Canva</h2>
       <div className="flex flex-row flex-wrap justify-center items-center gap-[2vh]">
         {canva.map((item) => (
           <img

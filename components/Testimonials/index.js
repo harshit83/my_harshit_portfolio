@@ -32,21 +32,21 @@ export default function Testimonials() {
 
   const testidata = [
     {
-      testiImg: "/Images/reenanew.jpg",
+      testiImg: "/Images/reenanew.webp",
       testName: "Reena Verma",
       testPost: "UI/UX Designer",
       testdesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt fuga maiores! Totam magni vero natus ea ad? Repellat voluptatibus assumen ddolorum eius repellendus esse odio aperiam! Deserunt minus veritati asperiores",
     },
     {
-      testiImg: "/Images/sakshi.jpg",
+      testiImg: "/Images/sakshi.webp",
       testName: "Sakshi Bhole",
       testPost: "TE COMP A",
       testdesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt fuga maiores! Totam magni vero natus ea ad? Repellat voluptatibus assumen ddolorum eius repellendus esse odio aperiam! Deserunt minus veritati asperiores",
     },
     {
-      testiImg: "/Images/aditi.jfif",
+      testiImg: "/Images/aditi.webp",
       testName: "Aditi Nikam",
       testPost: "TE CS&E",
       testdesc:
@@ -54,14 +54,14 @@ export default function Testimonials() {
     },
     
     {
-      testiImg: "/Images/anu.jpg",
+      testiImg: "/Images/anu.webp",
       testName: "Anushri Khadke",
       testPost: "TE COMP A",
       testdesc:
       "I have the pleasure of personally seeing Gaurav's dedication to excellence. The only qualities that can match their constant work ethic are their natural grace and respect for others. Gaurav is a valuable member to any development team because they bring not only coding expertise but also a special combination of hard work and sensitivity",
     },
     {
-      testiImg: "/Images/ayush.jfif",
+      testiImg: "/Images/ayush.webp",
       testName: "Ayush Lahoti",
       testPost: "CEO - Bunchup",
       testdesc:

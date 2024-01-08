@@ -54,7 +54,7 @@ export default function About() {
         <Tilt className="mx-auto md:mx-0 ">
           <div className="gauravimg relative p-[1vh] w-[80vw] h-[52vh] md:w-[50vh] md:h-[60vh] flex flex-row justify-center items-center">
             <img
-              src="./Images/gauravimg.jpg"
+              src="./Images/gauravimg.webp"
               className="absolute z-[50] w-[95%] h-[50vh] mx-auto md:w-[48vh] md:h-[58vh] object-cover"
               alt="gauravimg"
             />
