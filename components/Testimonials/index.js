@@ -52,13 +52,12 @@ export default function Testimonials() {
       testdesc:
         "Gaurav Madan is an amazing designer who combines good looks and practicality in his work. His designs are not just liked; they are really loved. Gaurav not only helps with projects but also supports and boosts confidence. In the creative world, he is like a shining light, showing the way with his special skills and guidance.",
     },
-    
     {
-      testiImg: "/Images/anu.webp",
-      testName: "Anushri Khadke",
-      testPost: "TE COMP A",
+      testiImg: "/mainlogo.png",
+      testName: "Samarth Krupa",
+      testPost: "Agro tourism",
       testdesc:
-      "I have the pleasure of personally seeing Gaurav's dedication to excellence. The only qualities that can match their constant work ethic are their natural grace and respect for others. Gaurav is a valuable member to any development team because they bring not only coding expertise but also a special combination of hard work and sensitivity",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt fuga maiores! Totam magni vero natus ea ad? Repellat voluptatibus assumen ddolorum eius repellendus esse odio aperiam! Deserunt minus veritati asperiores ddolorum eius repellendus esse odio aperiam! Deserunt minus veritati asperiores",
     },
     {
       testiImg: "/Images/ayush.webp",
@@ -68,11 +67,11 @@ export default function Testimonials() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt fuga maiores! Totam magni vero natus ea ad? Repellat voluptatibus assumen ddolorum eius repellendus esse odio aperiam! Deserunt minus veritati asperiores ddolorum eius repellendus esse odio aperiam! Deserunt minus veritati asperiores",
     },
     {
-      testiImg: "/mainlogo.png",
-      testName: "Samarth Krupa",
-      testPost: "Agro tourism",
+      testiImg: "/Images/anu.webp",
+      testName: "Anushri Khadke",
+      testPost: "TE COMP A",
       testdesc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt fuga maiores! Totam magni vero natus ea ad? Repellat voluptatibus assumen ddolorum eius repellendus esse odio aperiam! Deserunt minus veritati asperiores ddolorum eius repellendus esse odio aperiam! Deserunt minus veritati asperiores",
+      "I have the pleasure of personally seeing Gaurav's dedication to excellence. The only qualities that can match their constant work ethic are their natural grace and respect for others. Gaurav is a valuable member to any development team because they bring not only coding expertise but also a special combination of hard work and sensitivity",
     },
   ];
 
