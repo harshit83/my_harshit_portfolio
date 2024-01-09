@@ -64,7 +64,7 @@ export default function Testimonials() {
       testName: "Ayush Lahoti",
       testPost: "CEO - Bunchup",
       testdesc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt fuga maiores! Totam magni vero natus ea ad? Repellat voluptatibus assumen ddolorum eius repellendus esse odio aperiam! Deserunt minus veritati asperiores ddolorum eius repellendus esse odio aperiam! Deserunt minus veritati asperiores",
+        "Believing in Gaurav has been an absolute relief, as he possess a remarkable combination of Technical Skills and Creative Ideation. His dedication makes unrealistic deadlines realistic. This makes him undoubtedly best at his work.",
     },
     {
       testiImg: "/Images/anu.webp",
