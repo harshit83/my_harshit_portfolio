@@ -114,14 +114,14 @@ export default function Contact() {
               </div>
 
               <div className="mt-[4vh] border-2 border-black">
-                <input
-                  type="text"
+                <textarea
+                  rows={3}
                   placeholder="Enter Message"
                   className="text-white bg-transparent border border-gray-500 text-[2.3vh] w-full p-[1vh] focus:outline-none"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                />
+                ></textarea>
               </div>
 
               <div className="mt-[4vh] flex flex-row text-white text-[2.2vh] font-semibold">
