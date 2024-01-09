@@ -54,6 +54,7 @@ body {
   left: 0;
   z-index: -1;
 }
+
 .techgradient {
   background: linear-gradient(45deg, #00203c, #000000);
 }
@@ -81,10 +82,12 @@ body {
   transition-delay: 1s;
   border: none;
 }
+
 .btngradient span {
   position: absolute;
   display: block;
-  animation-duration: 2s; /* Adjust the duration based on your preference */
+  animation-duration: 2s;
+  /* Adjust the duration based on your preference */
   animation-iteration-count: infinite;
 }
 
@@ -108,6 +111,7 @@ body {
   background: linear-gradient(90deg, transparent, #ffffff);
   animation-name: slideIn;
 }
+
 .btngradient:hover span:nth-child(1) {
   left: 100%;
   transition: 1s;
@@ -123,6 +127,7 @@ body {
   background: linear-gradient(180deg, transparent, #ffffff);
   animation-name: slideIn;
 }
+
 .btngradient:hover span:nth-child(2) {
   top: 100%;
   transition: 1s;
@@ -138,6 +143,7 @@ body {
   background: linear-gradient(270deg, transparent, #ffffff);
   animation-name: slideIn;
 }
+
 .btngradient:hover span:nth-child(3) {
   right: 100%;
   transition-delay: 1.25s;
@@ -153,6 +159,7 @@ body {
   background: linear-gradient(360deg, transparent, #ffffff);
   animation-name: slideIn;
 }
+
 .btngradient:hover span:nth-child(4) {
   bottom: 100%;
   transition-delay: 1s;
@@ -233,8 +240,8 @@ body {
   transition: transform 0.3s;
 }
 
-@media (max-width:768px) {
-  .lines{
+@media (max-width: 768px) {
+  .lines {
     display: none;
   }
 }
@@ -260,16 +267,20 @@ body {
   .navbtn {
     display: none;
   }
+
   .svglb {
     width: 390px;
     height: 390px;
   }
+
   .profession {
     font-size: 40px;
   }
+
   .profession1 {
     font-size: 40px;
   }
+
   .hamburger {
     display: block;
   }
@@ -279,6 +290,7 @@ body {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -384,7 +396,8 @@ body {
 }
 
 .project-link a {
-  display: block; /* Ensure the link takes up the full space */
+  display: block;
+  /* Ensure the link takes up the full space */
 }
 
 .project-link:hover::after {
@@ -398,7 +411,8 @@ body {
 }
 
 .project-card:hover .project-link a {
-  transform: translateZ(50px); /* Adjust the scale factor as needed */
+  transform: translateZ(50px);
+  /* Adjust the scale factor as needed */
 }
 
 @media (max-width: 768px) {
@@ -418,31 +432,35 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.tespic{
+.tespic {
   border: 4px solid rgb(100, 185, 255);
 }
 
 .swiper-3d .swiper-slide-shadow-left,
 .swiper-3d .swiper-slide-shadow-right {
-  background-image: none; /* Remove the default shadow background */
-  opacity: 0; /* Hide the shadows by setting their opacity to 0 */
+  background-image: none;
+  /* Remove the default shadow background */
+  opacity: 0;
+  /* Hide the shadows by setting their opacity to 0 */
 }
 
 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
   display: none;
 }
 
-.tesgradient2{
-  background: linear-gradient(pink,white);
+.tesgradient2 {
+  background: linear-gradient(pink, white);
 }
 
 /* services */
-.webgradient{
-  background: linear-gradient(#00084d,rgb(91, 206, 255));
+.webgradient {
+  background: linear-gradient(#00084d, rgb(91, 206, 255));
 }
-.appgradient{
+
+.appgradient {
   background: linear-gradient(180deg, #00501f, #001200);
 }
-.uigradient{
+
+.uigradient {
   background: linear-gradient(180deg, #500037, #20000f);
 }

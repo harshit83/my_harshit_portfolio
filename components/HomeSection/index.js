@@ -44,7 +44,7 @@ export default function HomeSection() {
         <Lottie animationData={spaceship} />
       </div>
       
-      <div className="content">
+      <div className="content select-none">
         
         <h1 className="text-[2.7vh] md:text-[4vh] font-medium my-1 text-white text-center">
           Gaurav Madan
