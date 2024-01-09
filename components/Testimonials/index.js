@@ -36,14 +36,14 @@ export default function Testimonials() {
       testName: "Reena Verma",
       testPost: "UI/UX Designer",
       testdesc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt fuga maiores! Totam magni vero natus ea ad? Repellat voluptatibus assumen ddolorum eius repellendus esse odio aperiam! Deserunt minus veritati asperiores",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt fuga maiores! Totam magni vero natus ea ad? Repellat voluptatibus assumen ddolorum eius repellendus esse odio aperiam! Deserunt minus veritati asperiores ddolorum eius repellendus esse odio aperiam! Deserunt minus veritati asperiores",
     },
     {
       testiImg: "/Images/sakshi.webp",
       testName: "Sakshi Bhole",
       testPost: "TE COMP A",
       testdesc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt fuga maiores! Totam magni vero natus ea ad? Repellat voluptatibus assumen ddolorum eius repellendus esse odio aperiam! Deserunt minus veritati asperiores",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt fuga maiores! Totam magni vero natus ea ad? Repellat voluptatibus assumen ddolorum eius repellendus esse odio aperiam! Deserunt minus veritati asperiores ddolorum eius repellendus esse odio aperiam! Deserunt minus veritati asperiores",
     },
     {
       testiImg: "/Images/aditi.webp",
@@ -65,7 +65,14 @@ export default function Testimonials() {
       testName: "Ayush Lahoti",
       testPost: "CEO - Bunchup",
       testdesc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt fuga maiores! Totam magni vero natus ea ad? Repellat voluptatibus assumen ddolorum eius repellendus esse odio aperiam! Deserunt minus veritati asperiores",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt fuga maiores! Totam magni vero natus ea ad? Repellat voluptatibus assumen ddolorum eius repellendus esse odio aperiam! Deserunt minus veritati asperiores ddolorum eius repellendus esse odio aperiam! Deserunt minus veritati asperiores",
+    },
+    {
+      testiImg: "/mainlogo.png",
+      testName: "Samarth Krupa",
+      testPost: "Agro tourism",
+      testdesc:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt fuga maiores! Totam magni vero natus ea ad? Repellat voluptatibus assumen ddolorum eius repellendus esse odio aperiam! Deserunt minus veritati asperiores ddolorum eius repellendus esse odio aperiam! Deserunt minus veritati asperiores",
     },
   ];
 

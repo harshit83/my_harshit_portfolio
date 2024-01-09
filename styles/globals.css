@@ -233,6 +233,12 @@ body {
   transition: transform 0.3s;
 }
 
+@media (max-width:768px) {
+  .lines{
+    display: none;
+  }
+}
+
 .hamburger.open .line:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }

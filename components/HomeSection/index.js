@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import dynamic from "next/dynamic"
 import spaceship from "../../public/assets-json/spaceship.json";
+import lines from "../../public/assets-json/lines.json";
 
 const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
@@ -42,6 +43,7 @@ export default function HomeSection() {
       <div className="svglb absolute ">
         <Lottie animationData={spaceship} />
       </div>
+      
       <div className="content">
         
         <h1 className="text-[2.7vh] md:text-[4vh] font-medium my-1 text-white text-center">
@@ -67,6 +69,13 @@ export default function HomeSection() {
           </a>
         </button>
       </div>
+      <div >
+        <Lottie animationData={lines} className="lines absolute opacity-50 top-[40%] left-0 -z-50"/>
+      </div>
+      <div >
+        <Lottie animationData={lines} className="lines absolute opacity-50 top-[40%] right-0 rotate-180 -z-50"/>
+      </div>
+     
     </div>
   );
 }

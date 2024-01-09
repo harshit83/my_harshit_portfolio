@@ -2,11 +2,11 @@ import React from "react";
 
 export default function Others() {
   const canva = [
-    { canvaImg: "/Images/icons/canva.png" },
-    { canvaImg: "/Images/icons/figma.png" },
+    { canvaImg: "/Images/icons/canva.webp" },
+    { canvaImg: "/Images/icons/figma.webp" },
     // { canvaImg: "/Images/icons/vercel.jfif" },
-    { canvaImg: "/Images/icons/git.png" },
-    { canvaImg: "/Images/icons/github.png" },
+    { canvaImg: "/Images/icons/git.webp" },
+    { canvaImg: "/Images/icons/github.webp" },
     // { canvaImg: "/Images/icons/linux.png" },
     
   ];

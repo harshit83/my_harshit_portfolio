@@ -92,7 +92,7 @@ export default function Contact() {
 
               <div className="mt-[4vh] border-2 border-black">
                 <input
-                  type="text"
+                  type="email"
                   placeholder="Enter Email Address"
                   className="text-white bg-transparent border border-gray-500 text-[2.3vh] w-full p-[1vh] focus:outline-none"
                   name="email"
@@ -103,7 +103,8 @@ export default function Contact() {
 
               <div className="mt-[4vh] border-2 border-black">
                 <input
-                  type="text"
+                  type="number"
+                  maxLength={10}
                   placeholder="Enter Phone Number"
                   className="text-white bg-transparent border border-gray-500 text-[2.3vh] w-full p-[1vh] focus:outline-none"
                   name="phoneNumber"
