@@ -4,7 +4,7 @@ export default function Backend() {
   const backend=[
     {backendImg:"/Images/icons/express.png"},
     {backendImg:"/Images/icons/js.webp"},
-    {backendImg:"/Images/icons/django.png"},
+    // {backendImg:"/Images/icons/django.png"},
     {backendImg:"/Images/icons/mysql.webp"},
     {backendImg:"/Images/icons/mongo-db.png"},
     

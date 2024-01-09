@@ -4,10 +4,10 @@ export default function Others() {
   const canva = [
     { canvaImg: "/Images/icons/canva.png" },
     { canvaImg: "/Images/icons/figma.png" },
-    { canvaImg: "/Images/icons/vercel.jfif" },
+    // { canvaImg: "/Images/icons/vercel.jfif" },
     { canvaImg: "/Images/icons/git.png" },
     { canvaImg: "/Images/icons/github.png" },
-    { canvaImg: "/Images/icons/linux.png" },
+    // { canvaImg: "/Images/icons/linux.png" },
     
   ];
   return (
