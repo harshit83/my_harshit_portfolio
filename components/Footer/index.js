@@ -1,9 +1,20 @@
-import React from "react";
+import React,{useEffect} from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Footer() {
+
+  useEffect(()=>{
+    AOS.init({});
+    AOS.refresh();
+    return ()=>{
+      AOS.refreshHard();
+    }
+  },[])
+  
   return (
-    <div className="my-[6vh] mt-[14vh] select-none">
-      <div className="text-center text-[3vh] md:text-[3.5vh] font-medium text-neutral-100 mb-[2vh]">
+    <div data-aos="zoom-in" className="my-[6vh] mt-[14vh] select-none">
+      <div  className="text-center text-[3vh] md:text-[3.5vh] font-medium text-neutral-100 mb-[2vh]">
         Connect me on
       </div>
       <div className="flex flex-row justify-center items-center my-[2vh]">
@@ -49,7 +60,7 @@ export default function Footer() {
         </a>
 
       </div>
-      <p className="text-stone-300 text-[2vh] md:text-[2.5vh] text-center font-normal">
+      <p  data-aos="zoom-in" className="text-stone-300 text-[2vh] md:text-[2.5vh] text-center font-normal">
         CopyRight @2024 Gaurav Madan, All rights reserved
       </p>
       <div className="flex flex-row justify-center items-center gap-[1vh]">

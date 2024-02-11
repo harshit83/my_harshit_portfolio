@@ -1,6 +1,10 @@
-import React from "react";
+import React,{useEffect} from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Frontend() {
+
   const frontend=[
     {frontendImg:"/Images/icons/htmk.webp"},
     {frontendImg:"/Images/icons/css.webp"},
@@ -11,10 +15,19 @@ export default function Frontend() {
     {frontendImg:"/Images/icons/react.webp"},
     {frontendImg:"/Images/icons/nextjs.jpg"},
   ]
+
+  useEffect(()=>{
+    AOS.init({});
+    AOS.refresh();
+    return ()=>{
+      AOS.refreshHard();
+    }
+  },[])
+
   return (
     <div className="w-[90%] md:w-[70%] lg:w-[50%] mx-auto">
-      <h2 className="text-white text-center text-[3.4vh] my-[5vh]">Frontend</h2>
-      <div className="flex flex-row flex-wrap justify-center items-center gap-[2vh]">
+      <h2 data-aos="fade-left" className="text-white text-center text-[3.4vh] my-[5vh]">Frontend</h2>
+      <div data-aos="zoom-in" data-aos-duration="800" className="flex flex-row flex-wrap justify-center items-center gap-[2vh]">
 
       {frontend.map((item)=>(
         <img 

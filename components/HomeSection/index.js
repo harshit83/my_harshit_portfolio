@@ -3,6 +3,10 @@ import dynamic from "next/dynamic"
 import spaceship from "../../public/assets-json/spaceship.json";
 import lines from "../../public/assets-json/lines.json";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 export default function HomeSection() {
@@ -37,14 +41,22 @@ export default function HomeSection() {
     return () => clearInterval(interval);
   }, [currentProfession, professions]);
 
+  useEffect(()=>{
+    AOS.init({});
+    AOS.refresh();
+    return ()=>{
+      AOS.refreshHard();
+    }
+  },[])
+
   return (
     <div id="home" className="home">
 
-      <div className="svglb absolute ">
+      <div data-aos="zoom-in" data-aos-duration="2000" className="svglb absolute">
         <Lottie animationData={spaceship} />
       </div>
       
-      <div className="content select-none">
+      <div data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="700" className="content select-none">
         
         <h1 className="text-[2.7vh] md:text-[4vh] font-medium my-1 text-white text-center">
           Gaurav Madan

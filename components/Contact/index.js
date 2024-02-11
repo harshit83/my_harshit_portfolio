@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import dynamic from "next/dynamic";
 import contact from "../../public/assets-json/contact.json";
 import { toast, Toaster } from "react-hot-toast";
 import { client } from "../../lib/client";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
@@ -62,17 +65,25 @@ export default function Contact() {
     }
   };
 
+  useEffect(()=>{
+    AOS.init({});
+    AOS.refresh();
+    return ()=>{
+      AOS.refreshHard();
+    }
+  },[])
+
   return (
     <div id="contact" className="w-[90%] select-none mx-auto  text-white text-center">
-      <h1 className="mb-[5vh] text-[5vh]">Contact</h1>
+      <h1 data-aos="fade-left" className="mb-[5vh] text-[5vh]">Contact</h1>
       <div className="flex flex-col md:flex-row items-center justify-center">
-        <div className="flex flex-row items-center">
+        <div data-aos="fade-right" data-aos-duration="800" className="flex flex-row items-center">
           <Lottie
             animationData={contact}
             className="w-[90vw] mx-auto md:w-[35vw]"
           />
         </div>
-        <div className="flex flex-col justify-start items-start">
+        <div data-aos="fade-left" data-aos-duration="800" className="flex flex-col justify-start items-start">
           <div className="w-[80vw] md:w-[40vw] mx-auto md:py-[6vh] ml-[2vh]">
             <form
               onSubmit={handleSubmit}

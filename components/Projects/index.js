@@ -1,6 +1,11 @@
-import React, { useRef } from "react";
+import React, { useEffect} from "react";
 import Link from "next/link";
 import { ProjectCard } from "../../elements";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 
 export default function Projects() {
   const projects = [
@@ -37,13 +42,23 @@ export default function Projects() {
     },
   ];
 
+  useEffect(()=>{
+    AOS.init({});
+    AOS.refresh();
+    return ()=>{
+      AOS.refreshHard();
+    }
+  },[])
+
   return (
     <div id="projects" className="text-2xl text-white text-center py-[6vh]">
-      <h1 className="text-center text-[3vh] md:text-[5vh] font-semibold my-[10vh]">
+      <h1 data-aos="fade-left" className="text-center text-[3vh] md:text-[5vh] font-semibold my-[10vh]">
         My Recent Work/Projects
       </h1>
 
       <div
+        data-aos="zoom-in"
+        data-aos-duration="700"
         className="flex flex-row flex-wrap gap-[3vh] md:gap-[5vh] justify-center items-center"
       >
         {projects.map((item, index) => (

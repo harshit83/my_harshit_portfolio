@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Navbar() {
+
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   const [loading, setLoading] = useState(false);
@@ -20,11 +23,23 @@ export default function Navbar() {
     setMobileNavOpen(!mobileNavOpen);
   };
 
+  useEffect(()=>{
+    AOS.init({});
+    AOS.refresh();
+    return ()=>{
+      AOS.refreshHard();
+    }
+  },[])
+
   return (
     <>
       {loading && (
         <div>
-          <div className="navbar relative z-50 w-[95%] mx-auto flex justify-between items-center my-[5vh]">
+          <div 
+            data-aos="zoom-in" 
+            data-aos-duration="500" 
+            className="navbar relative z-50 w-[95%] mx-auto flex justify-between items-center my-[5vh]"
+          >
             <div>
               <img
                 src="./Images/gauravlogo.png"
