@@ -4,7 +4,7 @@ import { HomeSection, Projects, TechStack, Contact, About, Testimonials, Service
 export default function Home() {
   
   return (
-    <>
+    <div>
       <HomeSection/>
       <About />
       <TechStack />
@@ -12,6 +12,6 @@ export default function Home() {
       <Projects />
       <Testimonials/>
       <Contact />
-    </>
+    </div>
   );
 }

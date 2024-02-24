@@ -51,7 +51,7 @@ export default function Projects() {
   },[])
 
   return (
-    <div id="projects" className="text-2xl text-white text-center py-[6vh]">
+    <div id="projects" className="text-2xl text-white text-center py-[6vh] overflow-hidden">
       <h1 data-aos="fade-left" className="text-center text-[3vh] md:text-[5vh] font-semibold my-[10vh]">
         My Recent Work/Projects
       </h1>

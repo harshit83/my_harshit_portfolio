@@ -34,7 +34,7 @@ export default function Navbar() {
   return (
     <>
       {loading && (
-        <div>
+        <div className="overflow-hidden">
           <div 
             data-aos="zoom-in" 
             data-aos-duration="500" 

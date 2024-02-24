@@ -6,9 +6,10 @@
 
 body {
   background-color: #070012;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   font-family: "Space Grotesk", sans-serif;
   font-weight: 600;
+  margin: auto;
 }
 
 /* Scroll bar */

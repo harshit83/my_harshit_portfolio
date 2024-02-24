@@ -88,7 +88,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <div className="mb-[10vh]">
+    <div className="mb-[10vh] overflow-hidden">
       <h1 data-aos="fade-right" className="text-[3vh] md:text-[5vh] my-[5vh] text-white text-center">
         Testimonials
       </h1>

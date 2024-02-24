@@ -4,7 +4,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function Others() {
-
   const canva = [
     { canvaImg: "/Images/icons/canva.webp" },
     { canvaImg: "/Images/icons/figma.webp" },
@@ -12,21 +11,29 @@ export default function Others() {
     { canvaImg: "/Images/icons/git.webp" },
     { canvaImg: "/Images/icons/github.webp" },
     // { canvaImg: "/Images/icons/linux.png" },
-    
   ];
 
-  useEffect(()=>{
+  useEffect(() => {
     AOS.init({});
     AOS.refresh();
-    return ()=>{
+    return () => {
       AOS.refreshHard();
-    }
-  },[])
+    };
+  }, []);
 
   return (
     <div className="w-[90%] md:w-[70%] lg:w-[50%] mx-auto">
-      <h2 data-aos="fade-left" className="text-white text-center text-[3.4vh] my-[5vh]">Others</h2>
-      <div data-aos="zoom-in" data-aos-duration="800" className="flex flex-row flex-wrap justify-center items-center gap-[2vh]">
+      <h2
+        // data-aos="fade-left"
+        className="text-white text-center text-[3.4vh] my-[5vh]"
+      >
+        Others
+      </h2>
+      <div
+        // data-aos="zoom-in"
+        // data-aos-duration="800"
+        className="flex flex-row flex-wrap justify-center items-center gap-[2vh]"
+      >
         {canva.map((item) => (
           <img
             src={item.canvaImg}

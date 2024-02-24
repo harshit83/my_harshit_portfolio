@@ -74,7 +74,7 @@ export default function Contact() {
   },[])
 
   return (
-    <div id="contact" className="w-[90%] select-none mx-auto  text-white text-center">
+    <div id="contact" className="w-[90%] select-none mx-auto text-white text-center">
       <h1 data-aos="fade-left" className="mb-[5vh] text-[5vh]">Contact</h1>
       <div className="flex flex-col md:flex-row items-center justify-center">
         <div data-aos="fade-right" data-aos-duration="800" className="flex flex-row items-center">
