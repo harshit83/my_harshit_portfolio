@@ -24,14 +24,14 @@ export default function Others() {
   return (
     <div className="w-[90%] md:w-[70%] lg:w-[50%] mx-auto">
       <h2
-        // data-aos="fade-left"
+        data-aos="fade-left"
         className="text-white text-center text-[3.4vh] my-[5vh]"
       >
         Others
       </h2>
       <div
-        // data-aos="zoom-in"
-        // data-aos-duration="800"
+        data-aos="zoom-in"
+        data-aos-duration="800"
         className="flex flex-row flex-wrap justify-center items-center gap-[2vh]"
       >
         {canva.map((item) => (

@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import contact from "../../public/assets-json/contact.json";
 import { toast, Toaster } from "react-hot-toast";
@@ -65,31 +65,47 @@ export default function Contact() {
     }
   };
 
-  useEffect(()=>{
+  useEffect(() => {
     AOS.init({});
     AOS.refresh();
-    return ()=>{
+    return () => {
       AOS.refreshHard();
-    }
-  },[])
+    };
+  }, []);
 
   return (
-    <div id="contact" className="w-[90%] select-none mx-auto text-white text-center">
-      <h1 data-aos="fade-left" className="mb-[5vh] text-[5vh]">Contact</h1>
+    <div
+      id="contact"
+      className="w-[90%] select-none mx-auto text-white text-center"
+    >
+      <h1 data-aos="fade-left" className="mb-[5vh] text-[5vh]">
+        Contact
+      </h1>
       <div className="flex flex-col md:flex-row items-center justify-center">
-        <div data-aos="fade-right" data-aos-duration="800" className="flex flex-row items-center">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="800"
+          className="flex flex-row items-center"
+        >
           <Lottie
             animationData={contact}
             className="w-[90vw] mx-auto md:w-[35vw]"
           />
         </div>
-        <div data-aos="fade-left" data-aos-duration="800" className="flex flex-col justify-start items-start">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="800"
+          className="flex flex-col justify-start items-start"
+        >
           <div className="w-[80vw] md:w-[40vw] mx-auto md:py-[6vh] ml-[2vh]">
             <form
               onSubmit={handleSubmit}
               className="flex flex-col justify-start"
             >
-              <h2 className="text-left text-[2.8vh] md:text-[3.3vh] font-normal text-neutral-200">You can drop a message for any tech related queries, I will reach out you soon</h2>
+              <h2 className="text-left text-[2.8vh] md:text-[3.3vh] font-normal text-neutral-200">
+                You can drop a message for any tech related queries, I will
+                reach out you soon
+              </h2>
               <div className="mt-[6vh] border-2 border-black">
                 <input
                   type="text"

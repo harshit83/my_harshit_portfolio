@@ -1,11 +1,9 @@
-import React, { useEffect} from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import { ProjectCard } from "../../elements";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-
 
 export default function Projects() {
   const projects = [
@@ -42,17 +40,23 @@ export default function Projects() {
     },
   ];
 
-  useEffect(()=>{
+  useEffect(() => {
     AOS.init({});
     AOS.refresh();
-    return ()=>{
+    return () => {
       AOS.refreshHard();
-    }
-  },[])
+    };
+  }, []);
 
   return (
-    <div id="projects" className="text-2xl text-white text-center py-[6vh] overflow-hidden">
-      <h1 data-aos="fade-left" className="text-center text-[3vh] md:text-[5vh] font-semibold my-[10vh]">
+    <div
+      id="projects"
+      className="text-2xl text-white text-center py-[6vh] overflow-hidden"
+    >
+      <h1
+        data-aos="fade-left"
+        className="text-center text-[3vh] md:text-[5vh] font-semibold my-[10vh]"
+      >
         My Recent Work/Projects
       </h1>
 
