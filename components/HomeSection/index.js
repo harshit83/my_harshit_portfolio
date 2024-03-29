@@ -25,7 +25,7 @@ export default function HomeSection() {
   }, [visibleLetters, currentProfession]);
 
   const professions = useMemo(
-    () => ["UI/UX Designer", "Web Developer", "App Developer", "Freelancer"],
+    () => ["Mechanical Engineer", "Production Management", "Freelancer"],
     []
   );
 
@@ -52,13 +52,13 @@ export default function HomeSection() {
     <div id="home" className="w-[90%] mx-auto home">
 
       <div className="svglb absolute">
-        <Lottie animationData={spaceship} />
+        <Lottie className="w-[80vh]" animationData={spaceship} />
       </div>
       
       <div data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="700" className="content select-none">
         
-        <h1 className="text-[2.7vh] md:text-[4vh] font-medium my-1 text-white text-center">
-          Gaurav Madan
+        <h1 className="text-[3vh] md:text-[4vh] font-semibold my-1 text-white text-center">
+          Harshit Dhamanse
         </h1>
         
         <h1 className="my-1 profession flex mt-[3vh]">

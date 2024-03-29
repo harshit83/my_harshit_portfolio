@@ -35,9 +35,9 @@ export default function About() {
       <h2
         data-aos="fade-up"
         data-aos-duration="400"
-        className="mb-[5vh] text-[2.4vh] mx-auto md:text-[3vh] w-fit px-[2vh] text-cyan-900 bg-cyan-300"
+        className="mb-[5vh] text-[2.4vh] mx-auto md:text-[3vh] w-fit px-[2vh] text-gray-600 bg-slate-300"
       >
-        Full Stack Developer
+        Mechanical Engineer
       </h2>
 
       <div className="flex flex-col-reverse md:flex-row md:w-[95%] mx-auto justify-between">
@@ -58,35 +58,30 @@ export default function About() {
           </div>
 
           <p className="text-[2.5vh]  md:text-[3vh] font-normal text-justify text-gray-200 my-[1vh]">
-            I'm Gaurav Madan, a dedicated Full Stack Developer and UI/UX
-            enthusiast. With a keen eye for detail and a passion for innovation,
-            I excel in Frontend App Development, Web Development, and crafting
-            captivating user interfaces. As a third-year undergrad specializing
-            in CS&E (Cyber Security), my aim is to create secure and intuitive
-            digital experiences that prioritize functionality and user
-            satisfaction. I thrive on coding magic, constantly weaving
-            creativity into my work to deliver awe-inspiring solutions..{" "}
+          I'm Harshit Dhamanse, a dedicated Mechanical Engineer. With a keen eye for detail and a passion for innovation,
+            I excel in Production Management , Engineering tools, and Excellence and Practices. As a Fourth Year undergrad specializing
+            in Mechanical Engineering  my aim is to create a optimized solution for a workplace and Manage the proper Production flow and follow proper Engineering practice.{" "}
           </p>
 
           <div className="mb-[2vh] flex flex-row flex-wrap justify-center md:justify-start gap-x-[8vh] gap-y-[3vh]">
             <div className="flex flex-col w-[10vh] md:w-[18vh] p-[1.5vh] justify-center items-center">
-              <h2 className="text-[5vh] md:text-[7vh]  gradienttxt">02+</h2>
-              <p className="text-center text-[2.5vh] leading-[2.8vh] font-normal text-cyan-200">
+              <h2 className="text-[5vh] md:text-[7vh]  gradienttxt">03+</h2>
+              <p className="text-center text-[2.5vh] leading-[2.8vh] font-normal text-gray-200">
                 Years of Experience
               </p>
             </div>
             <div className="flex flex-col w-[10vh] md:w-[18vh] p-[1.5vh] justify-center items-center">
               <h2 className="text-[5vh] md:text-[7vh] gradienttxt">10+</h2>
-              <p className="text-center text-[2.5vh] leading-[2.8vh] font-normal text-cyan-200">
+              <p className="text-center text-[2.5vh] leading-[2.8vh] font-normal text-gray-200">
                 Projects Completed
               </p>
             </div>
-            <div className="flex flex-col w-[10vh] md:w-[18vh] p-[1.5vh] justify-center items-center">
+            {/* <div className="flex flex-col w-[10vh] md:w-[18vh] p-[1.5vh] justify-center items-center">
               <h2 className="text-[5vh] md:text-[7vh] gradienttxt">06+</h2>
               <p className="text-center text-[2.5vh] leading-[2.8vh] font-normal text-cyan-200">
                 Happy Clients
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -97,7 +92,7 @@ export default function About() {
             className="gauravimg relative p-[1vh] w-[80vw] h-[52vh] md:w-[50vh] md:h-[60vh] flex flex-row justify-center items-center"
           >
             <img
-              src="./Images/gauravimg.webp"
+              src="./Images/harshit.jpeg"
               className="absolute z-[50] w-[95%] h-[50vh] mx-auto md:w-[48vh] md:h-[58vh] object-cover"
               alt="gauravimg"
             />

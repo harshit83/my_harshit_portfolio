@@ -8,9 +8,9 @@ export default function Home() {
       <HomeSection/>
       <About />
       <TechStack />
-      <Services/>
+      {/* <Services/> */}
       <Projects />
-      <Testimonials/>
+      {/* <Testimonials/> */}
       <Contact />
     </div>
   );

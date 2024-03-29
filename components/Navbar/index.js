@@ -81,7 +81,7 @@ export default function Navbar() {
                 onClick={scrollToTop}
               >
                 <li className="navlist text-white text-[3.5vh] font-normal hover:text-cyan-500  cursor-pointer">
-                  Services
+                  Internships
                 </li>
               </Link>
 
@@ -94,6 +94,18 @@ export default function Navbar() {
               >
                 <li className="navlist text-white text-[3.5vh] font-normal hover:text-cyan-500  cursor-pointer">
                   Projects
+                </li>
+              </Link>
+
+              <Link
+                to="projects"
+                spy={true}
+                smooth={true}
+                duration={500}
+                onClick={scrollToTop}
+              >
+                <li className="navlist text-white text-[3.5vh] font-normal hover:text-cyan-500  cursor-pointer">
+                  DNJ
                 </li>
               </Link>
             </ul>

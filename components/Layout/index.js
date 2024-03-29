@@ -30,7 +30,7 @@ export default function Layout({ children }) {
       ) : (
         <div>
           <Head>
-            <title>Gaurav Madan</title>
+            <title>Harshit Dhamanse</title>
           </Head>
 
           <header>

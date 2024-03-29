@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #070012;
+  background-color: #151515;
   overflow-x: hidden;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 600;
@@ -26,7 +26,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(black, navy);
+  background: linear-gradient(black, rgb(91, 91, 91));
   border-radius: 5px;
 }
 
@@ -69,7 +69,7 @@ body {
   display: inline-block;
   letter-spacing: 1px;
   overflow: hidden;
-  background: linear-gradient(90deg, #00203c, #000000);
+  background: linear-gradient(90deg, #121212, #252525);
   transition: 0.2s;
   border: 1px groove rgb(128, 128, 128);
   /* box-shadow:  0 0 10px #2196f3, 0 0 100px #2196f3, 0 0 100px #2196f3; */
@@ -193,21 +193,23 @@ body {
 .profession {
   background: linear-gradient(
     180deg,
-    rgb(0, 197, 252) 0%,
+    rgb(231, 255, 78) 0%,
     rgb(255, 255, 255) 100%
   );
   background-clip: text;
+  background-color: #000000;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Poppins", sans-serif;
   font-size: 80px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 800;
+  backface-visibility: hidden;
   line-height: normal;
 }
 
 .profession1 {
-  background: linear-gradient(180deg, #fff 0%, #00d1ff 100%);
+  background: linear-gradient(180deg, #fff 0%, #ffff00 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -269,10 +271,10 @@ body {
     display: none;
   }
 
-  .svglb {
+  /* .svglb {
     width: 390px;
     height: 390px;
-  }
+  } */
 
   .profession {
     font-size: 40px;
@@ -320,11 +322,11 @@ body {
   border-radius: 50%;
   background: repeating-conic-gradient(
     from -90deg,
-    rgb(44, 0, 114) 0%,
-    rgb(44, 0, 114) 5%,
+    rgb(255, 255, 255) 0%,
+    rgb(47, 46, 49) 5%,
     transparent 5%,
     transparent 30%,
-    rgb(44, 0, 114) 50%
+    rgb(79, 79, 79) 50%
   );
   animation: spiral 8s linear infinite;
 }
@@ -347,11 +349,11 @@ body {
   border-radius: 50%;
   background: repeating-conic-gradient(
     from 0deg,
-    #2781ff 0%,
-    #2781ff 5%,
+    #000000 0%,
+    #2a2a2b 5%,
     transparent 5%,
     transparent 30%,
-    #2781ff 50%
+    #303132 50%
   );
   animation: spiral 8s linear infinite;
 }
@@ -427,7 +429,7 @@ body {
 
 /* experience */
 .gradienttxt {
-  background: linear-gradient(111deg, #ffffff 7.81%, #006eff 77.43%);
+  background: linear-gradient(111deg, #ffffff 7.81%, #353739 77.43%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
