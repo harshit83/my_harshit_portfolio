@@ -42,9 +42,9 @@ export default function Navbar() {
           >
             <div>
               <img
-                src="./Images/gauravlogo.png"
+                src="./Images/Harshit.png"
                 alt="gauravlogo"
-                className="h-[7vh] md:h-[10.5vh]"
+                className="h-[10vh] md:h-[14.5vh]"
               />
             </div>
 

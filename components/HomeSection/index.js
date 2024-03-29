@@ -18,14 +18,14 @@ export default function HomeSection() {
     if (visibleLetters < currentProfession.length) {
       timeout = setTimeout(() => {
         setVisibleLetters((prevVisibleLetters) => prevVisibleLetters + 1);
-      }, 100);
+      }, 120);
     }
 
     return () => clearTimeout(timeout);
   }, [visibleLetters, currentProfession]);
 
   const professions = useMemo(
-    () => ["Mechanical Engineer", "Production Management", "Freelancer"],
+    () => ["Mechanical Engineer  ", "Production Management  "],
     []
   );
 
@@ -35,7 +35,7 @@ export default function HomeSection() {
         (professions.indexOf(currentProfession) + 1) % professions.length;
       setCurrentProfession(professions[nextIndex]);
       setVisibleLetters(0);
-    }, 2000);
+    }, 3200);
 
     return () => clearInterval(interval);
   }, [currentProfession, professions]);
@@ -72,7 +72,7 @@ export default function HomeSection() {
           </span>
         </h1>
         <button className="btngradient mt-[3vh] px-[2vh] md:px-[3vh] py-[1vh] my-1 font-semibold text-[2.3vh] md:text-[3vh] text-blue-100">
-          <a href="./assets-json/MyResume.pdf" target="_blank">
+          <a href="./uharshitresume.pdf" target="_blank">
             <span></span>
             <span></span>
             <span></span>
