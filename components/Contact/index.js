@@ -103,8 +103,7 @@ export default function Contact() {
               className="flex flex-col justify-start"
             >
               <h2 className="text-left text-[2.8vh] md:text-[3.3vh] font-normal text-neutral-200">
-                You can drop a message for any tech related queries, I will
-                reach out you soon
+                You can drop a message, I will reach out you soon
               </h2>
               <div className="mt-[6vh] border-2 border-black">
                 <input

@@ -1,16 +1,16 @@
 import {defineConfig} from 'sanity'
-import {structureTool} from 'sanity/structure'
+import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemaTypes'
+import {schemaTypes} from './schemas'
 
 export default defineConfig({
   name: 'default',
-  title: 'harshitcontact',
+  title: 'harshitcontactform',
 
-  projectId: 'ud5i3ht0',
+  projectId: 'p4jng8n8',
   dataset: 'production',
 
-  plugins: [structureTool(), visionTool()],
+  plugins: [deskTool(), visionTool()],
 
   schema: {
     types: schemaTypes,
